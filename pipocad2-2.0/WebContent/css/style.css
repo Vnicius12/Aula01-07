@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+/*
+ * style.css
+ */
+body {
+  padding-top: 50px;
+}
+
+.titulo_div {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: -20px;
+}
+
+.wrapper {
+  display: inline-block;
+  height: 200px;
+  width: 400px;
+  margin: 30px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.movie-img {
+  float: left;
+  height: 200px;
+  width: 140px;
+}
+
+.movie-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.movie-info {
+  float: left;
+  height: 200px;
+  width: 260px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.movie-img:hover + .movie-info, .movie-info:hover {
+	background-color: rgba(229, 255, 0, 0.125);
+}
+
+.movie-text {
+  height: 125px;
+  width: 260px;
+}
+
+.movie-text h1 {
+  margin: 0 0 0 8px;
+  padding-top: 6px;
+  font-size: 28px;
+  color: #474747;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.movie-text h1,
+.movie-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.movie-text h2 {
+  margin: 0 0 0 8px;
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.2em;
+}
+
+.movie-text p {
+  height: 75px;
+  margin: 16px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: justify;
+  overflow: hidden;
+  overflow-wrap: break-word; 
+}
+
+.movie-rating {
+	width: 260px;
+}
+
+.rating {
+	text-decoration: none;
+	text-color: black;
+	font-size: 36px;
+	height: 52px;
+	margin: 15px auto;
+	width: 52px;
+	border-radius: 100px;
+	color: black;
+	background-color: rgba(1, 0, 1, 0.125);
+}
+
+.rating:hover {
+	color: black;
+	text-decoration: none;
+}
